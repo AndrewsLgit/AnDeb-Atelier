@@ -1,0 +1,1849 @@
+{
+"skeleton": {
+	"hash": "6jk/W4iHxRc",
+	"spine": "4.2.42",
+	"x": -149.42,
+	"y": -4.51,
+	"width": 265,
+	"height": 431.61,
+	"images": "../02-Body-Part/Character/images/",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root", "color": "ffffffff", "icon": "warning" },
+	{ "name": "Hip", "parent": "root", "x": -2.32, "y": 85, "color": "bf2d2dff" },
+	{
+		"name": "Body",
+		"parent": "Hip",
+		"length": 103.44,
+		"rotation": 91.38,
+		"x": -0.23,
+		"y": -0.76,
+		"color": "dbd931ff"
+	},
+	{
+		"name": "Leg-Front",
+		"parent": "Hip",
+		"length": 62,
+		"rotation": -89.3,
+		"x": -39.21,
+		"y": -7.15,
+		"color": "2934acff"
+	},
+	{
+		"name": "Foot-Front",
+		"parent": "Leg-Front",
+		"length": 28.17,
+		"rotation": 76.45,
+		"x": 60.92,
+		"y": -3.5,
+		"inherit": "noScale",
+		"color": "2fb18aff"
+	},
+	{
+		"name": "Leg-Back",
+		"parent": "Hip",
+		"length": 62.58,
+		"rotation": -87,
+		"x": 23.74,
+		"y": -5.34,
+		"color": "2934acff"
+	},
+	{
+		"name": "Foot-Back",
+		"parent": "Leg-Back",
+		"length": 23.55,
+		"rotation": 67.79,
+		"x": 63.16,
+		"y": -4.71,
+		"inherit": "noScale",
+		"color": "2fb18aff"
+	},
+	{
+		"name": "Head",
+		"parent": "Body",
+		"length": 116.8,
+		"rotation": 8.79,
+		"x": 115.73,
+		"y": 3.13,
+		"color": "d7c129ff"
+	},
+	{
+		"name": "Mask",
+		"parent": "Head",
+		"length": 95.3,
+		"rotation": -131.57,
+		"x": 105.2,
+		"y": 9.5,
+		"color": "d3812fff"
+	},
+	{
+		"name": "ear",
+		"parent": "Mask",
+		"length": 60.46,
+		"rotation": 153.98,
+		"x": -1.16,
+		"y": 64.87,
+		"color": "da8731ff"
+	},
+	{ "name": "Eye", "parent": "Mask", "rotation": 31.4, "x": 13.3, "y": 10.73, "color": "ff3100ff" },
+	{
+		"name": "eyes",
+		"parent": "Eye",
+		"length": 25.12,
+		"rotation": -31.52,
+		"x": -1.07,
+		"y": 0.92,
+		"inherit": "onlyTranslation",
+		"color": "55d22eff"
+	},
+	{
+		"name": "Speculaire",
+		"parent": "eyes",
+		"rotation": 0.06,
+		"x": 10.76,
+		"y": -0.03,
+		"inherit": "onlyTranslation",
+		"color": "55d22eff",
+		"icon": "warning"
+	},
+	{
+		"name": "Eye-IK",
+		"parent": "Eye",
+		"x": 7.85,
+		"y": 0.8,
+		"inherit": "onlyTranslation",
+		"color": "ffffffff",
+		"icon": "eye"
+	},
+	{ "name": "Sourcil", "parent": "Eye", "x": 22.55, "y": 28.39, "color": "d3812fff" },
+	{
+		"name": "Plume-Front-01",
+		"parent": "Body",
+		"length": 31.22,
+		"rotation": 137.31,
+		"x": 110.06,
+		"y": 12.53,
+		"color": "04ff1fff"
+	},
+	{ "name": "Plume-Front-02", "parent": "Plume-Front-01", "length": 48.95, "rotation": 8.16, "x": 31.22, "color": "04ff1fff" },
+	{
+		"name": "Plume-Front-03",
+		"parent": "Plume-Front-02",
+		"length": 69.17,
+		"rotation": 7.38,
+		"x": 47.86,
+		"y": -1.24,
+		"color": "04ff1fff"
+	},
+	{
+		"name": "Plume-Back-01",
+		"parent": "Body",
+		"length": 24.01,
+		"rotation": -137.58,
+		"x": 109.48,
+		"y": -12.7,
+		"color": "3bdb32ff"
+	},
+	{
+		"name": "Plume-Back-02",
+		"parent": "Plume-Back-01",
+		"length": 47.91,
+		"rotation": -12.79,
+		"x": 23.34,
+		"y": -0.35,
+		"color": "3bdb32ff"
+	},
+	{
+		"name": "Plume-Back-03",
+		"parent": "Plume-Back-02",
+		"length": 73.7,
+		"rotation": -6.26,
+		"x": 47.14,
+		"y": -0.37,
+		"color": "3bdb32ff"
+	},
+	{
+		"name": "Col-Background",
+		"parent": "Body",
+		"length": 89,
+		"rotation": 16.65,
+		"x": 117.04,
+		"y": -0.5,
+		"color": "137e2dff"
+	},
+	{
+		"name": "Col-Back",
+		"parent": "Col-Background",
+		"length": 106.46,
+		"rotation": -54.48,
+		"x": -4.64,
+		"y": -2.41,
+		"color": "db5931ff"
+	},
+	{
+		"name": "Col-Front",
+		"parent": "Col-Background",
+		"length": 102.4,
+		"rotation": 28.95,
+		"x": 0.72,
+		"y": 11.18,
+		"color": "db5931ff"
+	},
+	{
+		"name": "Dress",
+		"parent": "Hip",
+		"length": 61.1,
+		"rotation": -88.46,
+		"x": -0.36,
+		"y": 0.51,
+		"color": "802dbfff"
+	},
+	{ "name": "Necklace", "parent": "Body", "x": 108.32, "y": 0.53, "color": "305adbff" },
+	{
+		"name": "Neck-Mid",
+		"parent": "Necklace",
+		"length": 33.55,
+		"rotation": -163.65,
+		"x": 0.07,
+		"y": -1.87,
+		"color": "305adbff"
+	},
+	{
+		"name": "Amulet",
+		"parent": "Neck-Mid",
+		"length": 32.88,
+		"rotation": -15.67,
+		"x": 32.9,
+		"y": -0.32,
+		"color": "305adbff"
+	},
+	{
+		"name": "Cape background",
+		"parent": "Body",
+		"length": 139.6,
+		"rotation": 170.81,
+		"x": 105.32,
+		"y": 4.41,
+		"color": "1f802eff"
+	},
+	{ "name": "BackFoot", "parent": "root", "x": 33.81, "y": -2.36, "color": "aa45ffff", "icon": "arrowsB" },
+	{ "name": "BackLeg_Ik", "parent": "BackFoot", "x": -3.17, "y": 16.2, "color": "aa45ffff", "icon": "ik" },
+	{ "name": "BackFoot_Ik", "parent": "BackFoot", "x": 16.76, "y": 8.87, "color": "aa45ffff", "icon": "ik" },
+	{ "name": "FrontFoot", "parent": "root", "x": -34.4, "y": 0.42, "color": "f0ff00ff", "icon": "arrows" },
+	{ "name": "FrontLeg_IK", "parent": "FrontFoot", "x": -6.54, "y": 15.95, "color": "f0ff00ff", "icon": "ik" },
+	{ "name": "FrontFoot-IK", "parent": "FrontFoot", "x": 18.28, "y": 11.21, "color": "f0ff00ff", "icon": "ik" }
+],
+"slots": [
+	{ "name": "Col-Background", "bone": "Col-Background", "attachment": "Col-Background" },
+	{ "name": "Cape background", "bone": "Cape background", "attachment": "Cape background" },
+	{ "name": "Foot-Back", "bone": "Foot-Back", "attachment": "Foot-Back" },
+	{ "name": "Leg-Back", "bone": "Leg-Back", "attachment": "Leg-Back" },
+	{ "name": "Foot-Front", "bone": "Foot-Front", "attachment": "Foot-Front" },
+	{ "name": "Leg-Front", "bone": "Leg-Front", "attachment": "Leg-Front" },
+	{ "name": "Body", "bone": "Head", "attachment": "Body" },
+	{ "name": "Dress", "bone": "Dress", "attachment": "Dress" },
+	{ "name": "Col-Back", "bone": "Col-Back", "attachment": "Col-Back" },
+	{ "name": "Col-Front", "bone": "Col-Front", "attachment": "Col-Front" },
+	{ "name": "Plume-Back-03", "bone": "Plume-Back-03", "attachment": "Plume-Back-03" },
+	{ "name": "Plume-Back-02", "bone": "Plume-Back-02", "attachment": "Plume-Back-02" },
+	{ "name": "Plume-Back-01", "bone": "Plume-Back-01", "attachment": "Plume-Back-01" },
+	{ "name": "Plume-Front-03", "bone": "Plume-Front-03", "attachment": "Plume-Front-03" },
+	{ "name": "Plume-Front-02", "bone": "Plume-Front-02", "attachment": "Plume-Front-02" },
+	{ "name": "Plume-Front-01", "bone": "Plume-Front-01", "attachment": "Plume-Front-01" },
+	{ "name": "Necklace", "bone": "Necklace", "attachment": "Necklace" },
+	{ "name": "Amulet", "bone": "Amulet", "attachment": "Amulet" },
+	{ "name": "Amulet-additive", "bone": "Amulet", "attachment": "Amulet-additive" },
+	{ "name": "Neck-Mid", "bone": "Neck-Mid", "attachment": "Neck-Mid" },
+	{ "name": "ear", "bone": "ear", "attachment": "ear" },
+	{ "name": "Mask", "bone": "Mask", "attachment": "Mask" },
+	{ "name": "Sourcil", "bone": "Sourcil", "attachment": "Sourcil" },
+	{ "name": "eyes", "bone": "Eye", "attachment": "eyes" },
+	{ "name": "Speculaire", "bone": "Speculaire", "attachment": "Speculaire" }
+],
+"ik": [
+	{
+		"name": "BackFoot_Ik",
+		"order": 2,
+		"bones": [ "Foot-Back" ],
+		"target": "BackFoot_Ik"
+	},
+	{
+		"name": "BackLeg_Ik",
+		"order": 1,
+		"bones": [ "Leg-Back" ],
+		"target": "BackLeg_Ik",
+		"compress": true
+	},
+	{
+		"name": "Eye-IK",
+		"bones": [ "eyes" ],
+		"target": "Eye-IK",
+		"compress": true
+	},
+	{
+		"name": "FrontFoot-IK",
+		"order": 4,
+		"bones": [ "Foot-Front" ],
+		"target": "FrontFoot-IK"
+	},
+	{
+		"name": "FrontLeg_IK",
+		"order": 3,
+		"bones": [ "Leg-Front" ],
+		"target": "FrontLeg_IK",
+		"compress": true
+	}
+],
+"physics": [
+	{
+		"name": "Amulet",
+		"order": 6,
+		"bone": "Amulet",
+		"rotate": 1,
+		"inertia": 0.5,
+		"damping": 0.85,
+		"mass": 0.76
+	},
+	{
+		"name": "Neck-Mid",
+		"order": 5,
+		"bone": "Neck-Mid",
+		"rotate": 1,
+		"inertia": 0.5,
+		"damping": 0.85,
+		"mass": 0.76
+	}
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Amulet": {
+				"Amulet": { "x": 16.77, "y": -2.02, "rotation": 85.98, "width": 46, "height": 53 }
+			},
+			"Amulet-additive": {
+				"Amulet-additive": { "x": 16.77, "y": -2.02, "rotation": 445.98, "width": 71, "height": 77 }
+			},
+			"Body": {
+				"Body": { "x": -25.15, "y": 17.67, "rotation": -100.18, "width": 128, "height": 332 }
+			},
+			"Cape background": {
+				"Cape background": { "x": 63.66, "y": 4.27, "rotation": 97.81, "width": 211, "height": 180 }
+			},
+			"Col-Back": {
+				"Col-Back": { "x": 49.36, "y": -0.5, "rotation": -53.55, "width": 102, "height": 124 }
+			},
+			"Col-Background": {
+				"Col-Background": { "x": 47.95, "y": -1.37, "rotation": -108.04, "width": 182, "height": 105 }
+			},
+			"Col-Front": {
+				"Col-Front": { "x": 46.35, "y": 6.31, "rotation": -136.98, "width": 121, "height": 135 }
+			},
+			"Dress": {
+				"Dress": {
+					"type": "mesh",
+					"uvs": [ 0.79193, 0.10761, 0.85117, 0.21522, 0.9142, 0.33778, 0.97723, 0.46034, 0.98862, 0.55454, 1, 0.64873, 0.96238, 0.69667, 0.92477, 0.74462, 0.84954, 0.84051, 0.77431, 0.92025, 0.69908, 1, 0.60301, 0.99886, 0.51017, 1, 0.42032, 0.92426, 0.33047, 0.84852, 0.17131, 0.74645, 0.09173, 0.69541, 0.01214, 0.64438, 0.0077, 0.55543, 0.00325, 0.46649, 0.06768, 0.33772, 0.13211, 0.20895, 0.19817, 0.10448, 0.26422, 0, 0.3785, 0, 0.73269, 0, 0.56367, 0.6357, 0.5448, 0.46764, 0.49486, 0.20795, 0.60003, 0.84567, 0.43668, 0.10397, 0.51983, 0.3378, 0.56267, 0.56521, 0.58552, 0.74054, 0.60395, 0.92227, 0.57773, 0.69436 ],
+					"triangles": [ 6, 7, 35, 11, 34, 10, 10, 34, 9, 11, 12, 34, 34, 12, 13, 13, 29, 34, 13, 14, 29, 34, 29, 9, 9, 29, 8, 14, 33, 29, 14, 15, 33, 29, 33, 8, 8, 33, 7, 15, 35, 33, 15, 16, 35, 7, 33, 35, 5, 6, 26, 16, 26, 35, 16, 17, 26, 6, 35, 26, 5, 32, 4, 17, 32, 26, 17, 18, 32, 5, 26, 32, 18, 27, 32, 32, 27, 4, 18, 19, 27, 27, 3, 4, 19, 31, 27, 27, 31, 3, 19, 20, 31, 31, 2, 3, 20, 28, 31, 31, 28, 2, 28, 1, 2, 20, 21, 28, 1, 30, 0, 30, 21, 22, 30, 28, 21, 1, 28, 30, 0, 24, 25, 24, 22, 23, 24, 30, 22, 0, 30, 24 ],
+					"vertices": [ 2, 2, 108.35, -39.82, 0.98113, 1, 36.96, 108.52, 0.01887, 2, 2, 85.85, -48.94, 0.9008, 1, 46.62, 86.24, 0.0992, 2, 2, 60.24, -58.61, 0.71556, 1, 56.91, 60.88, 0.28444, 3, 2, 34.63, -68.28, 0.51341, 24, -33.17, 68.47, 3.0E-5, 1, 67.19, 35.51, 0.48656, 3, 2, 15.1, -69.67, 0.38725, 24, -13.63, 69.8, 0.00969, 1, 69.05, 16.01, 0.60305, 3, 2, -4.44, -71.06, 0.27979, 24, 5.91, 71.14, 0.05027, 1, 70.91, -3.48, 0.66994, 3, 2, -14.21, -64.69, 0.22243, 24, 15.66, 64.75, 0.0995, 1, 64.79, -13.41, 0.67806, 3, 2, -23.99, -58.33, 0.14979, 24, 25.42, 58.36, 0.19883, 1, 58.66, -23.34, 0.65138, 3, 2, -43.54, -45.6, 0.0338, 24, 44.94, 45.57, 0.53283, 1, 46.4, -43.19, 0.43337, 3, 2, -59.75, -32.94, 0.00107, 24, 61.12, 32.88, 0.83335, 1, 34.15, -59.7, 0.16558, 2, 24, 77.29, 20.18, 0.96729, 1, 21.89, -76.21, 0.03271, 2, 24, 76.64, 4.53, 0.996, 1, 6.23, -75.98, 0.004, 2, 2, -75.23, 10.49, 0.00144, 24, 76.48, -10.6, 0.99856, 2, 2, -59.21, 24.76, 0.06043, 24, 60.41, -24.83, 0.93957, 2, 2, -43.19, 39.03, 0.24845, 24, 44.35, -39.05, 0.75155, 2, 2, -21.45, 64.46, 0.48143, 24, 22.54, -64.43, 0.51857, 2, 2, -10.58, 77.18, 0.54203, 24, 11.64, -77.11, 0.45797, 2, 2, 0.29, 89.9, 0.57663, 24, 0.73, -89.8, 0.42337, 2, 2, 18.71, 90.18, 0.61589, 24, -17.69, -90.04, 0.38411, 2, 2, 37.14, 90.47, 0.66892, 24, -36.12, -90.27, 0.33108, 2, 2, 63.54, 79.34, 0.78137, 24, -62.48, -79.07, 0.21863, 2, 2, 89.93, 68.2, 0.90388, 24, -88.85, -67.86, 0.09612, 2, 2, 111.3, 56.93, 0.96975, 24, -110.18, -56.52, 0.03025, 2, 2, 132.66, 45.65, 0.99403, 24, -131.52, -45.19, 0.00597, 2, 2, 132.22, 27.02, 0.99851, 24, -131.02, -26.56, 0.00149, 2, 2, 130.85, -30.69, 0.99945, 1, 27.3, 130.79, 5.5E-4, 3, 2, -0.05, -0.02, 0.97385, 24, 1.32, 0.12, 0.01146, 1, -0.21, -0.81, 0.01468, 2, 2, 34.8, 2.23, 0.99445, 24, -33.53, -2.04, 0.00555, 2, 2, 88.74, 9.09, 0.99662, 24, -87.49, -8.75, 0.00338, 2, 24, 44.93, 4.89, 0.97878, 1, 5.73, -44.27, 0.02122, 2, 2, 110.48, 18.06, 0.99719, 24, -109.25, -17.66, 0.00281, 2, 2, 61.77, 5.66, 0.99452, 24, -60.51, -5.39, 0.00548, 2, 2, 14.54, -0.2, 1, 1, -0.38, 13.78, 0, 2, 24, 23.11, 3.1, 0.95663, 1, 3.36, -22.51, 0.04337, 2, 24, 60.8, 5.1, 0.99139, 1, 6.38, -60.13, 0.00861, 2, 24, 13.52, 2.08, 0.92911, 1, 2.09, -12.95, 0.07089 ],
+					"hull": 26,
+					"edges": [ 10, 52, 52, 34, 6, 54, 54, 38, 2, 56, 56, 42, 46, 48, 48, 50, 16, 58, 58, 28, 20, 22, 22, 24, 2, 0, 0, 50, 48, 60, 60, 56, 42, 44, 44, 46, 38, 40, 40, 42, 54, 62, 62, 56, 2, 4, 4, 6, 6, 8, 8, 10, 52, 64, 64, 54, 34, 36, 36, 38, 28, 30, 66, 58, 14, 16, 14, 66, 66, 30, 24, 26, 26, 28, 16, 18, 18, 20, 22, 68, 68, 58, 30, 32, 32, 34, 10, 12, 12, 14, 52, 70, 70, 66, 32, 70, 70, 12, 36, 64, 64, 8, 68, 24, 68, 20, 58, 26, 26, 68, 68, 18, 58, 18, 66, 28, 66, 16, 70, 30, 70, 14, 52, 12, 52, 32, 64, 34, 64, 10, 54, 36, 54, 8, 62, 38, 62, 6, 56, 40, 40, 62, 62, 4, 56, 4, 60, 42, 60, 2, 44, 60, 60, 0, 48, 44, 48, 0 ],
+					"width": 163,
+					"height": 207
+				}
+			},
+			"ear": {
+				"ear": { "x": 25.59, "y": -4.18, "rotation": -122.71, "width": 75, "height": 91 }
+			},
+			"eyes": {
+				"eyes": { "x": -1.46, "y": 2.04, "rotation": 0.21, "width": 57, "height": 55 }
+			},
+			"Foot-Back": {
+				"Foot-Back": { "x": 9.38, "y": 2.15, "rotation": 19.21, "width": 48, "height": 37 }
+			},
+			"Foot-Front": {
+				"Foot-Front": { "x": 12.09, "y": 2.63, "rotation": 12.85, "width": 57, "height": 42 }
+			},
+			"Leg-Back": {
+				"Leg-Back": { "x": 39.07, "y": 2.62, "rotation": 87, "width": 43, "height": 76 }
+			},
+			"Leg-Front": {
+				"Leg-Front": { "x": 31.15, "y": 5.23, "rotation": 89.3, "width": 51, "height": 88 }
+			},
+			"Mask": {
+				"Mask": { "x": 2.4, "y": 15.25, "rotation": 31.4, "width": 186, "height": 211 }
+			},
+			"Neck-Mid": {
+				"Neck-Mid": {
+					"type": "mesh",
+					"uvs": [ 1, 1, 0, 1, 0, 0, 1, 0 ],
+					"triangles": [ 1, 2, 3, 1, 3, 0 ],
+					"vertices": [ 51.36, 6.26, 39.81, -27.83, -20.81, -7.3, -9.26, 26.8 ],
+					"hull": 4,
+					"edges": [ 0, 2, 2, 4, 4, 6, 0, 6 ],
+					"width": 36,
+					"height": 64
+				}
+			},
+			"Necklace": {
+				"Necklace": { "x": 5.79, "y": 13.09, "rotation": -91.38, "width": 131, "height": 46 }
+			},
+			"Plume-Back-01": {
+				"Plume-Back-01": { "x": 18.38, "y": 3.27, "rotation": 46.2, "width": 66, "height": 50 }
+			},
+			"Plume-Back-02": {
+				"Plume-Back-02": { "x": 31.75, "y": 1.54, "rotation": 58.99, "width": 97, "height": 73 }
+			},
+			"Plume-Back-03": {
+				"Plume-Back-03": { "x": 46.07, "y": -8.35, "rotation": 65.25, "width": 113, "height": 136 }
+			},
+			"Plume-Front-01": {
+				"Plume-Front-01": { "x": 33.38, "y": -11.52, "rotation": 131.31, "width": 96, "height": 59 }
+			},
+			"Plume-Front-02": {
+				"Plume-Front-02": { "x": 39.14, "y": -3.2, "rotation": 123.15, "width": 124, "height": 93 }
+			},
+			"Plume-Front-03": {
+				"Plume-Front-03": { "x": 48.44, "y": 5.76, "rotation": 115.77, "width": 136, "height": 122 }
+			},
+			"Sourcil": {
+				"Sourcil": { "x": -1.01, "y": -0.85, "width": 23, "height": 21 }
+			},
+			"Speculaire": {
+				"Speculaire": { "x": -0.45, "y": -1.09, "rotation": 0.33, "width": 26, "height": 25 }
+			}
+		}
+	}
+],
+"events": {
+	"Jump-idle": {},
+	"Jump-Impulsion": {},
+	"Jump-Reception": {}
+},
+"animations": {
+	"Attack-speed": {
+		"slots": {
+			"Amulet": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				],
+				"attachment": [
+					{ "name": "Amulet" }
+				]
+			},
+			"Amulet-additive": {
+				"attachment": [
+					{},
+					{ "time": 0.1667, "name": "Amulet-additive" }
+				]
+			}
+		},
+		"bones": {
+			"Plume-Front-01": {
+				"rotate": [
+					{ "value": 8.66 },
+					{ "time": 0.1333, "value": -19.53 },
+					{ "time": 0.2333, "value": 8.66 }
+				],
+				"scale": [
+					{ "y": 0.905 },
+					{ "time": 0.1333 },
+					{ "time": 0.2333, "y": 0.905 }
+				]
+			},
+			"Plume-Front-02": {
+				"rotate": [
+					{ "value": 8.66 },
+					{ "time": 0.1333, "value": -27.64 },
+					{ "time": 0.2333, "value": 8.66 }
+				],
+				"scale": [
+					{ "y": 0.905 },
+					{ "time": 0.1333 },
+					{ "time": 0.2333, "y": 0.905 }
+				]
+			},
+			"Plume-Front-03": {
+				"rotate": [
+					{ "value": 8.66 },
+					{ "time": 0.1333, "value": -29.92 },
+					{ "time": 0.2333, "value": 8.66 }
+				],
+				"scale": [
+					{ "y": 0.905 },
+					{ "time": 0.1333 },
+					{ "time": 0.2333, "y": 0.905 }
+				]
+			},
+			"Plume-Back-02": {
+				"rotate": [
+					{ "value": 26.58 },
+					{ "time": 0.1333, "value": -10.08 },
+					{ "time": 0.2333, "value": 19.94 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1333, "y": 0.835 },
+					{ "time": 0.2333 }
+				]
+			},
+			"Plume-Back-03": {
+				"rotate": [
+					{ "value": 18.76 },
+					{ "time": 0.1333, "value": -22.94 },
+					{ "time": 0.2333, "value": 7.07 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1333, "y": 0.835 },
+					{ "time": 0.2333 }
+				]
+			},
+			"Cape background": {
+				"rotate": [
+					{ "value": 28.27 },
+					{ "time": 0.1333, "value": -21.04 },
+					{ "time": 0.2333, "value": 28.27 }
+				]
+			},
+			"Head": {
+				"rotate": [
+					{ "value": 2.85 },
+					{ "time": 0.1333, "value": 9.29 },
+					{ "time": 0.2333, "value": 2.85 }
+				]
+			},
+			"Col-Background": {
+				"rotate": [
+					{ "value": 1.17 },
+					{ "time": 0.1333, "value": 14.33 },
+					{ "time": 0.2333, "value": 1.17 }
+				]
+			},
+			"Mask": {
+				"rotate": [
+					{ "value": -15.72 },
+					{ "time": 0.1333, "value": 3.53 },
+					{ "time": 0.2333, "value": -15.72 }
+				]
+			},
+			"Plume-Back-01": {
+				"rotate": [
+					{ "value": 30.02 },
+					{ "time": 0.1333 },
+					{ "time": 0.2333, "value": 30.02 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1333, "y": 0.835 },
+					{ "time": 0.2333 }
+				]
+			},
+			"Hip": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 5.99 },
+					{ "time": 0.2333 }
+				],
+				"translate": [
+					{ "x": 28.69, "y": -0.62 },
+					{ "time": 0.1333, "x": -21.2, "y": -3.74 },
+					{ "time": 0.2333, "x": 28.69, "y": -0.62 }
+				]
+			},
+			"Body": {
+				"rotate": [
+					{ "value": -14.14 },
+					{ "time": 0.1333, "value": 6.97 },
+					{ "time": 0.2333, "value": -14.14 }
+				]
+			},
+			"Dress": {
+				"rotate": [
+					{ "value": 16.42 },
+					{ "time": 0.1333, "value": -22.17 },
+					{ "time": 0.2333, "value": 16.42 }
+				]
+			},
+			"ear": {
+				"rotate": [
+					{ "value": -8.79 },
+					{ "time": 0.1333, "value": 17.33 },
+					{ "time": 0.2333, "value": -8.79 }
+				]
+			},
+			"Necklace": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": 2.74 }
+				],
+				"translate": [
+					{},
+					{ "time": 0.1333, "x": 1.9, "y": 2.95 }
+				]
+			},
+			"Sourcil": {
+				"rotate": [
+					{ "value": -10.47 },
+					{ "time": 0.1333 },
+					{ "time": 0.2333, "value": -10.47 }
+				],
+				"translate": [
+					{ "x": 4.8, "y": -6.4 },
+					{ "time": 0.1333 },
+					{ "time": 0.2333, "x": 4.8, "y": -6.4 }
+				]
+			}
+		}
+	},
+	"Death": {
+		"slots": {
+			"Amulet": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.4, "color": "626dd0ff" },
+					{ "time": 0.6, "color": "626dd000" }
+				],
+				"attachment": [
+					{ "name": "Amulet" }
+				]
+			},
+			"Amulet-additive": {
+				"attachment": [
+					{}
+				]
+			},
+			"Body": {
+				"rgba": [
+					{ "time": 0.1, "color": "ffffffff" },
+					{ "time": 0.3667, "color": "ffffff00" }
+				]
+			},
+			"Cape background": {
+				"rgba": [
+					{ "time": 0.2333, "color": "ffffffff" },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			},
+			"Col-Back": {
+				"rgba": [
+					{ "time": 0.3, "color": "ffffffff" },
+					{ "time": 0.5667, "color": "ffffff00" }
+				]
+			},
+			"Col-Background": {
+				"rgba": [
+					{ "time": 0.3, "color": "ffffffff" },
+					{ "time": 0.5667, "color": "ffffff00" }
+				]
+			},
+			"Col-Front": {
+				"rgba": [
+					{ "time": 0.3, "color": "ffffffff" },
+					{ "time": 0.5667, "color": "ffffff00" }
+				]
+			},
+			"Dress": {
+				"rgba": [
+					{ "time": 0.2333, "color": "ffffffff" },
+					{ "time": 0.4667, "color": "ffffff00" }
+				]
+			},
+			"ear": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.5, "color": "2f2f2fff", "curve": "stepped" },
+					{ "time": 0.7333, "color": "2f2f2fff" },
+					{ "time": 1.0667, "color": "2f2f2f00" }
+				]
+			},
+			"eyes": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.5, "color": "323232ff", "curve": "stepped" },
+					{ "time": 0.6, "color": "323232ff", "curve": "stepped" },
+					{ "time": 0.6667, "color": "323232ff" },
+					{ "time": 0.9667, "color": "32323200" }
+				]
+			},
+			"Foot-Back": {
+				"rgba": [
+					{ "time": 0.1, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			},
+			"Foot-Front": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.2667, "color": "ffffff00" }
+				]
+			},
+			"Leg-Back": {
+				"rgba": [
+					{ "time": 0.0667, "color": "ffffffff" },
+					{ "time": 0.3333, "color": "ffffff00" }
+				]
+			},
+			"Leg-Front": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.2667, "color": "ffffff00" }
+				]
+			},
+			"Mask": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.5, "color": "313131ff", "curve": "stepped" },
+					{ "time": 0.6, "color": "313131ff", "curve": "stepped" },
+					{ "time": 0.8667, "color": "313131ff" },
+					{ "time": 1.3, "color": "31313100" }
+				]
+			},
+			"Neck-Mid": {
+				"rgba": [
+					{ "time": 0.2333, "color": "ffffffff" },
+					{ "time": 0.6667, "color": "ffffff00" }
+				]
+			},
+			"Necklace": {
+				"rgba": [
+					{ "time": 0.2333, "color": "ffffffff" },
+					{ "time": 0.6667, "color": "ffffff00" }
+				]
+			},
+			"Plume-Back-01": {
+				"rgba": [
+					{ "time": 0.2667, "color": "ffffffff" },
+					{ "time": 0.7, "color": "ffffff00" }
+				]
+			},
+			"Plume-Back-02": {
+				"rgba": [
+					{ "time": 0.2667, "color": "ffffffff" },
+					{ "time": 0.6333, "color": "ffffff00" }
+				]
+			},
+			"Plume-Back-03": {
+				"rgba": [
+					{ "time": 0.2667, "color": "ffffffff" },
+					{ "time": 0.5667, "color": "ffffff00" }
+				]
+			},
+			"Plume-Front-01": {
+				"rgba": [
+					{ "time": 0.2667, "color": "ffffffff" },
+					{ "time": 0.7, "color": "ffffff00" }
+				]
+			},
+			"Plume-Front-02": {
+				"rgba": [
+					{ "time": 0.2667, "color": "ffffffff" },
+					{ "time": 0.6667, "color": "ffffff00" }
+				]
+			},
+			"Plume-Front-03": {
+				"rgba": [
+					{ "time": 0.2667, "color": "ffffffff" },
+					{ "time": 0.6, "color": "ffffff00" }
+				]
+			},
+			"Sourcil": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.5, "color": "313131ff", "curve": "stepped" },
+					{ "time": 0.6667, "color": "313131ff" },
+					{ "time": 0.9667, "color": "31313100" }
+				]
+			},
+			"Speculaire": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.2667, "color": "ffffff00" }
+				]
+			}
+		},
+		"bones": {
+			"Mask": {
+				"rotate": [
+					{ "time": 0.3333 },
+					{ "time": 0.7, "value": -118.42 },
+					{ "time": 0.7667, "value": -129.4 },
+					{ "time": 0.8333, "value": -120.72 },
+					{ "time": 0.9, "value": -111.97 },
+					{ "time": 0.9667, "value": -121.96 }
+				],
+				"translate": [
+					{ "time": 0.3 },
+					{ "time": 0.5333, "x": -75.21, "y": -15.36 },
+					{ "time": 0.7, "x": -225.63, "y": -46.07 },
+					{ "time": 0.7667, "x": -229.34, "y": -82.73 }
+				]
+			},
+			"ear": {
+				"rotate": [
+					{ "time": 0.1 },
+					{ "time": 0.3667, "value": 14.97 }
+				]
+			},
+			"Body": {
+				"translate": [
+					{ "time": 1.4333 }
+				]
+			},
+			"Hip": {
+				"rotate": [
+					{},
+					{ "time": 0.5667, "value": 6.88 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.0333 },
+					{ "time": 0.1333, "x": -38.01, "y": 14.78 },
+					{ "time": 0.2667, "x": -59.12, "y": -3.17 },
+					{ "time": 0.4, "x": -77.07, "y": -27.45 }
+				]
+			},
+			"Necklace": {
+				"translate": [
+					{ "time": 0.2333 }
+				]
+			},
+			"Neck-Mid": {
+				"translate": [
+					{ "time": 0.2333 }
+				]
+			}
+		}
+	},
+	"hit": {
+		"slots": {
+			"Amulet": {
+				"rgba": [
+					{ "color": "ffffffff", "curve": "stepped" },
+					{ "time": 0.3333, "color": "ffffffff" }
+				]
+			},
+			"Amulet-additive": {
+				"rgba": [
+					{ "color": "ff3602ff" }
+				],
+				"attachment": [
+					{},
+					{ "time": 0.3333 }
+				]
+			},
+			"Body": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Cape background": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Col-Back": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Col-Background": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Col-Front": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Dress": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"ear": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"eyes": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Foot-Back": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Foot-Front": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Leg-Back": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Leg-Front": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Mask": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Neck-Mid": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Necklace": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Plume-Back-01": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Plume-Back-02": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Plume-Back-03": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Plume-Front-01": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Plume-Front-02": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Plume-Front-03": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Sourcil": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			},
+			"Speculaire": {
+				"rgba": [
+					{ "color": "ffffffff" }
+				]
+			}
+		},
+		"bones": {
+			"Eye": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": -7.18 },
+					{ "time": 0.3333 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1667, "y": 0.669 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Hip": {
+				"translate": [
+					{},
+					{ "time": 0.1667, "x": -27.81, "y": -12.78 },
+					{ "time": 0.3333 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1667, "y": 0.931 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Mask": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": 13.38 },
+					{ "time": 0.3333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.3333 }
+				]
+			},
+			"Plume-Front-03": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": -7.63 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Plume-Back-03": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": -11.74 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Plume-Back-02": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": -1.49 },
+					{ "time": 0.3333 }
+				]
+			},
+			"ear": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": 15.61 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Head": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": -18.97 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Col-Background": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": -9.53 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Body": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": -3.99 },
+					{ "time": 0.3333 }
+				]
+			}
+		}
+	},
+	"Idle": {
+		"slots": {
+			"Amulet-additive": {
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"Hip": {
+				"translate": [
+					{ "y": -5.33 },
+					{ "time": 0.3667, "y": -8.05 },
+					{ "time": 0.6667, "y": -5.33 }
+				]
+			},
+			"Plume-Front-01": {
+				"rotate": [
+					{},
+					{ "time": 0.2667, "value": -0.66 },
+					{ "time": 0.5 }
+				]
+			},
+			"Plume-Front-02": {
+				"rotate": [
+					{},
+					{ "time": 0.2667, "value": -0.66 },
+					{ "time": 0.5 }
+				]
+			},
+			"Plume-Front-03": {
+				"rotate": [
+					{},
+					{ "time": 0.2667, "value": -0.66 },
+					{ "time": 0.5 }
+				]
+			},
+			"Plume-Back-01": {
+				"rotate": [
+					{},
+					{ "time": 0.3, "value": 0.57 },
+					{ "time": 0.5 }
+				]
+			},
+			"Plume-Back-02": {
+				"rotate": [
+					{},
+					{ "time": 0.3, "value": 0.57 },
+					{ "time": 0.5 }
+				]
+			},
+			"Plume-Back-03": {
+				"rotate": [
+					{},
+					{ "time": 0.3, "value": 0.57 },
+					{ "time": 0.5 }
+				]
+			},
+			"Head": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": 0.45 },
+					{ "time": 0.5 }
+				]
+			},
+			"Eye-IK": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.5 }
+				]
+			},
+			"Col-Background": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": 1.14 },
+					{ "time": 0.5 }
+				]
+			},
+			"Necklace": {
+				"rotate": [
+					{},
+					{ "time": 0.2, "value": 0.54 },
+					{ "time": 0.5 }
+				]
+			},
+			"ear": {
+				"rotate": [
+					{},
+					{ "time": 0.1667, "value": 3.42 },
+					{ "time": 0.5 }
+				]
+			}
+		}
+	},
+	"Jump-idle": {
+		"slots": {
+			"Amulet-additive": {
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"Hip": {
+				"translate": [
+					{ "y": 214.67, "curve": "stepped" },
+					{ "time": 0.3333, "y": 214.67 }
+				]
+			},
+			"Body": {
+				"scale": [
+					{ "curve": "stepped" },
+					{ "time": 0.3333 }
+				]
+			},
+			"Plume-Front-01": {
+				"rotate": [
+					{},
+					{ "time": 0.2, "value": -3.99 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Plume-Front-02": {
+				"rotate": [
+					{},
+					{ "time": 0.2, "value": -3.99 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Plume-Front-03": {
+				"rotate": [
+					{},
+					{ "time": 0.2, "value": -3.99 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Plume-Back-01": {
+				"rotate": [
+					{},
+					{ "time": 0.2, "value": 1.52 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Plume-Back-02": {
+				"rotate": [
+					{},
+					{ "time": 0.2, "value": 1.52 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Plume-Back-03": {
+				"rotate": [
+					{},
+					{ "time": 0.2, "value": 1.52 },
+					{ "time": 0.3333 }
+				]
+			},
+			"BackFoot": {
+				"translate": [
+					{ "x": -118.83, "y": -1.53, "curve": "stepped" },
+					{ "time": 0.1, "x": -118.83, "y": -1.53 },
+					{ "time": 0.2, "x": -135.15, "y": 0.6 },
+					{ "time": 0.3333, "x": -118.83, "y": -1.53 }
+				]
+			},
+			"FrontFoot": {
+				"translate": [
+					{},
+					{ "time": 0.2, "x": 48.47 },
+					{ "time": 0.3333 }
+				]
+			},
+			"Mask": {
+				"rotate": [
+					{ "value": 9.14, "curve": "stepped" },
+					{ "time": 0.3333, "value": 9.14 }
+				]
+			},
+			"Eye-IK": {
+				"translate": [
+					{ "x": 9.52, "y": 3.38, "curve": "stepped" },
+					{ "time": 0.3333, "x": 9.52, "y": 3.38 }
+				]
+			},
+			"ear": {
+				"rotate": [
+					{ "value": 2.71 },
+					{ "time": 0.2, "value": 8.46 },
+					{ "time": 0.3333, "value": 2.71 }
+				]
+			},
+			"Dress": {
+				"rotate": [
+					{ "value": -0.09 },
+					{ "time": 0.2, "value": -6.21 },
+					{ "time": 0.3333, "value": -0.09 }
+				]
+			},
+			"Col-Background": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.3333 }
+				]
+			}
+		},
+		"events": [
+			{ "name": "Jump-idle" },
+			{ "time": 0.3333, "name": "Jump-idle" }
+		]
+	},
+	"Jump-impulsion": {
+		"slots": {
+			"Amulet-additive": {
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"Hip": {
+				"translate": [
+					{},
+					{ "time": 0.2333, "y": -26.66 },
+					{ "time": 0.4333, "y": 180.19 }
+				]
+			},
+			"Body": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": 7.44 },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4333 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.1, "x": 0.87, "curve": "stepped" },
+					{ "time": 0.2333, "x": 0.87 },
+					{ "time": 0.3333, "x": 1.095, "y": 0.938 },
+					{ "time": 0.4333, "x": 1.024, "y": 0.984 }
+				]
+			},
+			"Plume-Front-01": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": -5.8 },
+					{ "time": 0.3333, "value": 1.02 },
+					{ "time": 0.4333, "value": 0.25 }
+				]
+			},
+			"Plume-Front-02": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": -5.8 },
+					{ "time": 0.3333, "value": 1.02 },
+					{ "time": 0.4333, "value": 0.25 }
+				]
+			},
+			"Plume-Front-03": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": -6.92 },
+					{ "time": 0.3333, "value": 1.02 },
+					{ "time": 0.4333, "value": 0.25 }
+				]
+			},
+			"Plume-Back-01": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": 4.12 },
+					{ "time": 0.3333, "value": -4.06 },
+					{ "time": 0.4333, "value": -1.02 }
+				]
+			},
+			"Plume-Back-02": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": 4.12 },
+					{ "time": 0.3333, "value": -4.06 },
+					{ "time": 0.4333, "value": -1.02 }
+				]
+			},
+			"Plume-Back-03": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": 8.19 },
+					{ "time": 0.4333, "value": 1.17 }
+				]
+			},
+			"BackFoot": {
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.1333 },
+					{ "time": 0.2333, "x": -10.28, "y": 1.21, "curve": "stepped" },
+					{ "time": 0.3667, "x": -10.28, "y": 1.21 },
+					{ "time": 0.4333, "x": -82.64, "y": -0.62 }
+				]
+			},
+			"FrontFoot": {
+				"translate": [
+					{},
+					{ "time": 0.4333, "x": 30 }
+				]
+			},
+			"Mask": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": 14.21 },
+					{ "time": 0.4333, "value": 9.86 }
+				]
+			},
+			"Eye-IK": {
+				"translate": [
+					{},
+					{ "time": 0.1, "x": 7.91, "y": 13.83, "curve": "stepped" },
+					{ "time": 0.3667, "x": 7.91, "y": 13.83 },
+					{ "time": 0.4333, "x": 8.98, "y": 6.86 }
+				]
+			},
+			"ear": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": 12.06 },
+					{ "time": 0.4333, "value": 4.05 }
+				]
+			},
+			"Eye": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.4333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.4333 }
+				]
+			},
+			"Dress": {
+				"rotate": [
+					{},
+					{ "time": 0.4333, "value": -0.08 }
+				]
+			},
+			"Col-Background": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": 4.59 },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4333 }
+				]
+			}
+		},
+		"events": [
+			{ "name": "Jump-Impulsion" }
+		]
+	},
+	"Jump-reception": {
+		"slots": {
+			"Amulet-additive": {
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"Hip": {
+				"translate": [
+					{ "y": 180.19 },
+					{ "time": 0.2, "y": -26.66 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"Body": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.5333 }
+				],
+				"scale": [
+					{ "x": 0.981 },
+					{ "time": 0.2, "x": 0.87 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"Plume-Front-01": {
+				"rotate": [
+					{ "value": -0.83 },
+					{ "time": 0.2, "value": -5.8 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"Plume-Front-02": {
+				"rotate": [
+					{ "value": -0.83 },
+					{ "time": 0.2, "value": -5.8 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"Plume-Front-03": {
+				"rotate": [
+					{ "value": -2.86 },
+					{ "time": 0.2, "value": -20.05 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"Plume-Back-01": {
+				"rotate": [
+					{ "value": 0.59 },
+					{ "time": 0.2, "value": 4.12 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"Plume-Back-02": {
+				"rotate": [
+					{ "value": 0.59 },
+					{ "time": 0.2, "value": 4.12 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"Plume-Back-03": {
+				"rotate": [
+					{ "value": 2.91 },
+					{ "time": 0.2, "value": 20.37 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"BackFoot": {
+				"translate": [
+					{ "x": -118.83, "y": -1.53, "curve": "stepped" },
+					{ "time": 0.0667, "x": -118.83, "y": -1.53 },
+					{ "time": 0.2333, "curve": "stepped" },
+					{ "time": 0.3333, "curve": "stepped" },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"FrontFoot": {
+				"translate": [
+					{ "x": 29.08 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"Mask": {
+				"rotate": [
+					{ "value": -11.42 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"Eye-IK": {
+				"translate": [
+					{ "x": 10.41, "y": -3.19 },
+					{ "time": 0.0333, "x": 11.3, "y": -9.76, "curve": "stepped" },
+					{ "time": 0.3, "x": 11.3, "y": -9.76 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"ear": {
+				"rotate": [
+					{ "value": 4.05 },
+					{ "time": 0.2, "value": 12.06 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"Eye": {
+				"rotate": [
+					{ "curve": "stepped" },
+					{ "time": 0.5333 }
+				],
+				"translate": [
+					{ "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"Dress": {
+				"rotate": [
+					{ "value": -0.08 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			},
+			"Col-Background": {
+				"rotate": [
+					{ "value": 0.64 },
+					{ "time": 0.2, "value": 4.45 },
+					{ "time": 0.4, "curve": "stepped" },
+					{ "time": 0.5333 }
+				]
+			}
+		}
+	},
+	"Run": {
+		"slots": {
+			"Amulet-additive": {
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"BackFoot": {
+				"rotate": [
+					{ "value": 69.82 },
+					{ "time": 0.1333, "value": 17.67 },
+					{ "time": 0.5333, "value": 69.82 }
+				],
+				"translate": [
+					{ "x": 48.55, "y": 5.82 },
+					{ "time": 0.1333, "x": 5.29, "y": -10.17 },
+					{ "time": 0.2667, "x": -103.58, "y": 0.5 },
+					{ "time": 0.3, "x": -88.92, "y": 3.17 },
+					{ "time": 0.4, "x": -93.25, "y": 13.35 },
+					{ "time": 0.5333, "x": 58.53, "y": 10.93 }
+				]
+			},
+			"FrontFoot": {
+				"rotate": [
+					{},
+					{ "time": 0.1333, "value": -53.8 },
+					{ "time": 0.3, "value": 55.41 },
+					{ "time": 0.5333 }
+				],
+				"translate": [
+					{ "x": -128.83, "y": -25.19 },
+					{ "time": 0.1333, "x": -27.6, "y": 17.24 },
+					{ "time": 0.3, "x": 110.26, "y": -10.38 },
+					{ "time": 0.4, "x": 33.42, "y": -11.52 },
+					{ "time": 0.4667, "x": -15.31, "y": -10.65 },
+					{ "time": 0.5333, "x": -127.25, "y": -37.87 }
+				]
+			},
+			"Hip": {
+				"translate": [
+					{ "y": 8.69 },
+					{ "time": 0.1333, "y": -4.09 },
+					{ "time": 0.2333, "y": 8.69 },
+					{ "time": 0.3667, "y": -4.09 },
+					{ "time": 0.5333, "y": 8.69 }
+				]
+			},
+			"Plume-Front-01": {
+				"rotate": [
+					{ "value": -3.94 },
+					{ "time": 0.2333, "value": -6.91 },
+					{ "time": 0.5333, "value": -3.94 }
+				]
+			},
+			"Plume-Front-02": {
+				"rotate": [
+					{ "value": -3.94 },
+					{ "time": 0.2333, "value": -6.91 },
+					{ "time": 0.5333, "value": -3.94 }
+				]
+			},
+			"Plume-Front-03": {
+				"rotate": [
+					{ "value": -3.94 },
+					{ "time": 0.2333, "value": -6.91 },
+					{ "time": 0.5333, "value": -3.94 }
+				]
+			},
+			"Plume-Back-01": {
+				"rotate": [
+					{},
+					{ "time": 0.2667, "value": 1.49 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Plume-Back-02": {
+				"rotate": [
+					{},
+					{ "time": 0.2667, "value": 1.49 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Plume-Back-03": {
+				"rotate": [
+					{},
+					{ "time": 0.2667, "value": 1.49 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Necklace": {
+				"rotate": [
+					{},
+					{ "time": 0.2667, "value": 1.76 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Col-Background": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": 2.93 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Dress": {
+				"rotate": [
+					{},
+					{ "time": 0.2, "value": -10.13 },
+					{ "time": 0.5333 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.2, "x": 0.91 },
+					{ "time": 0.5333 }
+				]
+			},
+			"ear": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": 4.73 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Neck-Mid": {
+				"rotate": [
+					{},
+					{ "time": 0.2333, "value": -9.58 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Mask": {
+				"rotate": [
+					{ "value": 16.77, "curve": "stepped" },
+					{ "time": 0.5333, "value": 16.77 }
+				]
+			},
+			"Eye-IK": {
+				"translate": [
+					{ "x": 7.07, "y": -1.18 }
+				]
+			},
+			"Body": {
+				"rotate": [
+					{ "value": -17.09 }
+				]
+			},
+			"Head": {
+				"rotate": [
+					{ "value": 5.13 }
+				]
+			},
+			"Leg-Front": {
+				"translate": [
+					{},
+					{ "time": 0.2667, "x": 39.44 },
+					{ "time": 0.5333 }
+				]
+			},
+			"Leg-Back": {
+				"translate": [
+					{},
+					{ "time": 0.2667, "x": -37.74 },
+					{ "time": 0.5333 }
+				]
+			},
+			"FrontFoot-IK": {
+				"translate": [
+					{ "time": 0.2667, "x": 1.06, "y": -0.7 }
+				]
+			},
+			"BackLeg_Ik": {
+				"translate": [
+					{ "time": 0.1667 },
+					{ "time": 0.2667, "x": 30.2, "y": 43.04 }
+				]
+			},
+			"FrontLeg_IK": {
+				"translate": [
+					{},
+					{ "time": 0.0667, "x": 9.91, "y": 56.38 },
+					{ "time": 0.2333 }
+				]
+			}
+		},
+		"ik": {
+			"FrontFoot-IK": [
+				{},
+				{ "time": 0.0667, "mix": 0 },
+				{ "time": 0.2 }
+			]
+		}
+	},
+	"Walk": {
+		"slots": {
+			"Amulet-additive": {
+				"attachment": [
+					{}
+				]
+			},
+			"Dress": {
+				"attachment": [
+					{ "name": "Dress" },
+					{ "time": 1, "name": "Dress" }
+				]
+			}
+		},
+		"bones": {
+			"Hip": {
+				"translate": [
+					{ "y": -3.48 },
+					{ "time": 0.3, "y": 3.28 },
+					{ "time": 0.6, "y": -3.48 },
+					{ "time": 0.7667, "y": 3.28 },
+					{ "time": 1, "y": -3.48 }
+				]
+			},
+			"BackFoot": {
+				"translate": [
+					{ "x": 23.15, "y": -16.41 },
+					{ "time": 0.3, "x": -40.89, "y": -22.88 },
+					{ "time": 0.5, "x": -106.52, "y": -24.47 },
+					{ "time": 0.7, "x": -60.29, "y": -7.64 },
+					{ "time": 1, "x": 23.15, "y": -16.41 }
+				]
+			},
+			"BackFoot_Ik": {
+				"translate": [
+					{ "y": 20.2 },
+					{ "time": 0.1, "x": 1.44, "y": 14.22 },
+					{ "time": 0.3, "x": 0.98, "y": 24.7 },
+					{ "time": 0.5, "x": 0.82, "y": 23.95 },
+					{ "time": 1, "y": 20.2 }
+				]
+			},
+			"FrontFoot": {
+				"translate": [
+					{ "x": -65.72, "y": 1.99 },
+					{ "time": 0.5, "x": 44.22, "y": -15.04 },
+					{ "time": 1, "x": -58.5, "y": -2.53 }
+				]
+			},
+			"FrontFoot-IK": {
+				"translate": [
+					{},
+					{ "time": 0.5, "x": -3.2, "y": 14.65 },
+					{ "time": 0.9, "x": -3.22, "y": -0.39 },
+					{ "time": 1 }
+				]
+			},
+			"Dress": {
+				"rotate": [
+					{},
+					{ "time": 0.5, "value": -5.05 },
+					{ "time": 1 }
+				],
+				"scale": [
+					{},
+					{ "time": 0.5, "x": 0.903 },
+					{ "time": 1 }
+				]
+			},
+			"BackLeg_Ik": {
+				"translate": [
+					{ "time": 1, "y": 13.93 }
+				]
+			},
+			"Eye-IK": {
+				"translate": [
+					{},
+					{ "time": 0.5, "x": 1.06, "y": -5.01 },
+					{ "time": 1 }
+				]
+			},
+			"ear": {
+				"rotate": [
+					{},
+					{ "time": 0.5, "value": 6.03 },
+					{ "time": 1 }
+				]
+			},
+			"Plume-Back-01": {
+				"rotate": [
+					{ "value": -6.37 },
+					{ "time": 0.5, "value": -3.17 },
+					{ "time": 1, "value": -6.37 }
+				]
+			},
+			"Plume-Front-01": {
+				"rotate": [
+					{ "value": 5.64 },
+					{ "time": 0.5, "value": 1.29 },
+					{ "time": 1, "value": 5.64 }
+				]
+			},
+			"Col-Background": {
+				"rotate": [
+					{ "value": 0.46 },
+					{ "time": 0.5, "value": -2.19 },
+					{ "time": 1, "value": 0.46 }
+				]
+			},
+			"Necklace": {
+				"rotate": [
+					{ "value": 1.82 },
+					{ "time": 0.5, "value": -2.35 },
+					{ "time": 1, "value": 1.82 }
+				]
+			}
+		}
+	}
+}
+}
