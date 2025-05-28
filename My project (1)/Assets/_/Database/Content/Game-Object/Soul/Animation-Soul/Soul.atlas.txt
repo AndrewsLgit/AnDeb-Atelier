@@ -1,0 +1,6 @@
+Soul.png
+size:512,512
+filter:Linear,Linear
+S_soul
+bounds:2,2,373,453
+offsets:0,0,377,453
