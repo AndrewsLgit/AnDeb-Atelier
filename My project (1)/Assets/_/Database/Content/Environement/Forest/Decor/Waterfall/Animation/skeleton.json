@@ -1,0 +1,61 @@
+{
+"skeleton": {
+	"hash": "iaf2ek93+TM",
+	"spine": "4.2.43",
+	"x": -200,
+	"y": 2.46,
+	"width": 571,
+	"height": 2375,
+	"images": "",
+	"audio": "./audio"
+},
+"bones": [
+	{ "name": "root" }
+],
+"slots": [
+	{ "name": "Anim-Cascade-re-skin-Castelvania0000", "bone": "root", "attachment": "Anim-Cascade-re-skin-Castelvania0000" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"Anim-Cascade-re-skin-Castelvania0000": {
+				"Anim-Cascade-re-skin-Castelvania0000": { "x": 85.5, "y": 1189.96, "width": 571, "height": 2375 },
+				"Anim-Cascade-re-skin-Castelvania0001": { "x": 85.5, "y": 1189.96, "width": 571, "height": 2375 },
+				"Anim-Cascade-re-skin-Castelvania0002": { "x": 85.5, "y": 1189.96, "width": 571, "height": 2375 },
+				"Anim-Cascade-re-skin-Castelvania0003": { "x": 85.5, "y": 1189.96, "width": 571, "height": 2375 },
+				"Anim-Cascade-re-skin-Castelvania0004": { "x": 85.5, "y": 1189.96, "width": 571, "height": 2375 },
+				"Anim-Cascade-re-skin-Castelvania0005": { "x": 85.5, "y": 1189.96, "width": 571, "height": 2375 },
+				"Anim-Cascade-re-skin-Castelvania0006": { "x": 85.5, "y": 1189.96, "width": 571, "height": 2375 },
+				"Anim-Cascade-re-skin-Castelvania0007": { "x": 85.5, "y": 1189.96, "width": 571, "height": 2375 },
+				"Anim-Cascade-re-skin-Castelvania0008": { "x": 85.5, "y": 1189.96, "width": 571, "height": 2375 },
+				"Anim-Cascade-re-skin-Castelvania0009": { "x": 85.5, "y": 1189.96, "width": 571, "height": 2375 },
+				"Anim-Cascade-re-skin-Castelvania0010": { "x": 85.5, "y": 1189.96, "width": 571, "height": 2375 },
+				"Anim-Cascade-re-skin-Castelvania0011": { "x": 85.5, "y": 1189.96, "width": 571, "height": 2375 }
+			}
+		}
+	}
+],
+"animations": {
+	"animation": {
+		"slots": {
+			"Anim-Cascade-re-skin-Castelvania0000": {
+				"attachment": [
+					{ "name": "Anim-Cascade-re-skin-Castelvania0000" },
+					{ "time": 0.0333, "name": "Anim-Cascade-re-skin-Castelvania0001" },
+					{ "time": 0.1, "name": "Anim-Cascade-re-skin-Castelvania0002" },
+					{ "time": 0.1333, "name": "Anim-Cascade-re-skin-Castelvania0003" },
+					{ "time": 0.1667, "name": "Anim-Cascade-re-skin-Castelvania0004" },
+					{ "time": 0.2333, "name": "Anim-Cascade-re-skin-Castelvania0005" },
+					{ "time": 0.2667, "name": "Anim-Cascade-re-skin-Castelvania0006" },
+					{ "time": 0.3333, "name": "Anim-Cascade-re-skin-Castelvania0007" },
+					{ "time": 0.3667, "name": "Anim-Cascade-re-skin-Castelvania0008" },
+					{ "time": 0.4, "name": "Anim-Cascade-re-skin-Castelvania0009" },
+					{ "time": 0.4667, "name": "Anim-Cascade-re-skin-Castelvania0010" },
+					{ "time": 0.5, "name": "Anim-Cascade-re-skin-Castelvania0011" }
+				]
+			}
+		}
+	}
+}
+}
